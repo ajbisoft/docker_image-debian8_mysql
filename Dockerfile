@@ -1,4 +1,4 @@
-FROM debian:8
+FROM debian:9
 MAINTAINER Jakub Kwiatkowski <jakub@ajbisoft.pl>
 COPY sources.list /etc/apt/
 RUN export DEBIAN_FRONTEND=noninteractive && apt-get update && apt-get -y install mysql-server \

@@ -1,8 +1,8 @@
-# Docker image: debian8_mysql
+# Docker image: debian9_mysql
 
 ## Description
 
-Official Debian 8 (debian:8) + mysql-server docker image with some customization:
+Official Debian 9 (debian:9) + mysql-server docker image with some customization:
 * /etc/apt/sources.list modified to include jessie-updates and to use Polish mirror by default
 * Port 3306 is binded to 0.0.0.0
 * ENTRYPOINT set to autostart mysql service
