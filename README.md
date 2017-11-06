@@ -3,7 +3,6 @@
 ## Description
 
 Official Debian 9 (debian:9) + mysql-server docker image with some customization:
-* /etc/apt/sources.list modified to include jessie-updates and to use Polish mirror by default
 * Port 3306 is binded to 0.0.0.0
 * ENTRYPOINT set to autostart mysql service
 
@@ -21,6 +20,6 @@ This will expose and publish mysql container on port 3306 on all host interfaces
 
 ## Summary
 
-This docker image is best suited for simple MySQL applications. It can be used to make MySQL service avaiable on your host or it may be used within container network only. To run PHP web applications with this container you might be interested in my `ajbisoft/debian8_lamp` container.
+This docker image is best suited for simple MySQL applications. It can be used to make MySQL service avaiable on your host or it may be used within container network only. To run PHP web applications with this container you might be interested in my `ajbisoft/debian9_lamp` container.
 
 Should you need to use another database backend (like Postgres) with your project, please see my other docker images!
