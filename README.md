@@ -2,9 +2,10 @@
 
 ## Description
 
-Official Debian 9 (debian:9) + mysql-server docker image with some customization:
+Official Debian 9 (debian:9) + Official MySQL Server 5.7 docker image with some customization:
+* Added official MySQL 5.7 repository
 * Port 3306 is binded to 0.0.0.0
-* ENTRYPOINT set to autostart mysql service
+* ENTRYPOINT set to autostart mysql-server service
 
 ## Usage
 
