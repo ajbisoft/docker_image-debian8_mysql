@@ -6,12 +6,14 @@ Official Debian 9 (debian:9) + Official MySQL Server 5.7 docker image with some 
 * Added official MySQL 5.7 repository
 * Port 3306 is binded to 0.0.0.0
 * ENTRYPOINT set to autostart mysql-server service
+* If empty data volume is detected it will be initiated with new database
 
 ## Usage
 
 There are two main run-time settings that may be passed to newly created container from this image:
 * Port must be published when starting container by adding `-p 3306:3306` to your `docker run` statement if you want mysql service to be binded to host interfaces
-* There is no VOLUME statement in Dockerfile, so data volume must be attached when starting container by adding `-v <path_to_your_datadir>:/var/lib/mysql/` to your `docker run` statement. Please check permissions as container will not start if those are wrong.
+* If you want keep you data, a data volume must be attached when starting container by adding `-v <path_to_your_datadir>:/var/lib/mysql/` to your `docker run` statement. Please check permissions as container will not start if those are wrong.
+* I've also added a "first run" feature that will create a brand new database for you if no valid data is found on attached volume, so when running for the first time, you can mount an empty volume
 
 ## Example
 
