@@ -6,7 +6,7 @@ Official Debian 9 (debian:9) + Official MySQL Server 5.7 docker image with some 
 * Added official MySQL 5.7 repository
 * Port 3306 is binded to 0.0.0.0
 * ENTRYPOINT set to autostart mysql-server service
-* If empty data volume is detected it will be initiated with new database
+* If empty data volume is detected it will be initialized with new database
 
 ## Usage
 
